@@ -32,7 +32,6 @@ body.addEventListener('touchmove', function (event) {
 // Play audio when the page loads
 window.addEventListener('load', function () {
     audio.play().catch(() => {
-        // Handles autoplay restrictions, requiring user interaction to play
         console.log("User interaction needed to play the audio.");
     });
 });
